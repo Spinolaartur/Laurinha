@@ -27,7 +27,7 @@ export default function App() {
       <main>
         <Hero />
         <Gallery />
-        <Timeline />
+        {/* <Timeline /> */}
         <SpecialEvents />
         <Letters />
         <Closing />
