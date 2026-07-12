@@ -1,0 +1,28 @@
+# Place your photos here
+
+## Folder structure
+
+```
+public/images/
+├── hero.jpg              ← Hero section main photo
+├── closing.jpg           ← Closing section background
+├── timeline/
+│   ├── met.jpg
+│   ├── first-kiss.jpg
+│   └── official.jpg
+├── gallery/
+│   ├── 01.jpg
+│   ├── 02.jpg
+│   └── ...
+└── events/
+    ├── graduation/
+    │   ├── 01.jpg
+    │   ├── 02.jpg
+    │   └── 03.jpg
+    └── anniversary/
+        └── 01.jpg
+```
+
+Supported formats: `.jpg`, `.jpeg`, `.png`, `.webp`
+
+Recommended: compress photos before adding (under 500KB each for fast loading).
