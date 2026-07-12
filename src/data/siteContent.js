@@ -6,6 +6,8 @@
  * Imagens em: src/assets/ (import) ou public/images/ (caminho)
  */
 
+const withBase = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+
 export const siteMeta = {
   // EDITAR: Título do site ( também atualiza index.html )
   title: "A Nossa História",
@@ -63,7 +65,7 @@ export const hero = {
   // EDITAR: Texto do botão secundário
   secondaryCta: "Ver a linha do tempo",
   // EDITAR: Imagem hero - coloca em public/images/hero.jpg
-  image: "/images/hero.jpg",
+  image: withBase("images/hero.jpg"),
   imageAlt: "Um momento tranquilo juntos",
 };
 
@@ -91,7 +93,7 @@ export const timeline = {
       description:
         "Ainda não sabíamos, mas neste dia tivémos a primeira conversa de muitas. Desde o primeiro olhar que me apaixonei por ti.",
       // EDITAR: Caminho da imagem ( null para ocultar )
-      image: "/images/timeline/met.jpg",
+      image: withBase("images/timeline/met.jpg"),
       imageAlt: "O dia em que nos conhecemos",
     },
     {
@@ -100,7 +102,7 @@ export const timeline = {
       title: "Primeiro encontro",
       description:
         "Foi neste dia que que nos sentámos e bebemos um Castello de limão servido pela miúda do baile da bandida.",
-      image: "/images/timeline/first-kiss.jpg",
+      image: withBase("images/timeline/first-kiss.jpg"),
       imageAlt: "O nosso primeiro beijo",
     },
     {
@@ -109,7 +111,7 @@ export const timeline = {
       title: "Oficialmente nós",
       description:
         "Deixámos de fingir que era outra coisa. O início de algo que ambos escolhemos.",
-      image: "/images/timeline/official.jpg",
+      image: withBase("images/timeline/official.jpg"),
       imageAlt: "O dia em que ficámos juntos",
     },
     {
@@ -161,85 +163,85 @@ export const gallery = {
   // EDITAR: Adiciona mais itens - imagens em public/images/gallery/
   items: [
     {
-      src: "/images/gallery/01.jpg",
+      src: withBase("images/gallery/01.jpg"),
       alt: "01",
       caption: "Primeiro fim de ano 🎆",
       span: "tall",
     },
     {
-      src: "/images/gallery/02.jpg",
+      src: withBase("images/gallery/02.jpg"),
       alt: "02",
       caption: "Aquele coelho ficou bem pintado...",
       span: "large",
     },
     {
-      src: "/images/gallery/03.jpg",
+      src: withBase("images/gallery/03.jpg"),
       alt: "03",
       caption: "Depois de uma longa caminhada no Gerês 🍃",
       span: "tall",
     },
     {
-      src: "/images/gallery/04.jpg",
+      src: withBase("images/gallery/04.jpg"),
       alt: "04",
       caption: '"Escolhe a música"',
       span: "wide",
     },
     {
-      src: "/images/gallery/05.jpg",
+      src: withBase("images/gallery/05.jpg"),
       alt: "05",
       caption: "Sporting allez 🦁",
       span: "tall",
     },
     {
-      src: "/images/gallery/06.jpg",
+      src: withBase("images/gallery/06.jpg"),
       alt: "06",
       caption: "Foto de família",
       span: "normal",
     },
     {
-      src: "/images/gallery/07.jpg",
+      src: withBase("images/gallery/07.jpg"),
       alt: "07",
       caption: '"Vamos lá cima comer uma tosta?"',
       span: "normal",
     },
     {
-      src: "/images/gallery/08.jpg",
+      src: withBase("images/gallery/08.jpg"),
       alt: "08",
       caption: "Natal 2025 🎄",
       span: "tall",
     },
     {
-      src: "/images/gallery/09.jpg",
+      src: withBase("images/gallery/09.jpg"),
       alt: "09",
       caption: "A nossa primeira foto 🫶",
       span: "wide",
     },
     {
-      src: "/images/gallery/10.jpg",
+      src: withBase("images/gallery/10.jpg"),
       alt: "10",
       caption: "Hairy Lemon",
       span: "tall",
     },
     {
-      src: "/images/gallery/11.jpg",
+      src: withBase("images/gallery/11.jpg"),
       alt: "11",
       caption: "Dia dos namorados 2025 💘",
       span: "wide",
     },
     {
-      src: "/images/gallery/12.jpg",
+      src: withBase("images/gallery/12.jpg"),
       alt: "12",
       caption: "Flores do Bolhão🌼",
       span: "tall",
     },
     {
-      src: "/images/gallery/13.jpg",
+      src: withBase("images/gallery/13.jpg"),
       alt: "13",
       caption: "Desprevenidos na Fazenda",
       span: "tall",
     },
     {
-      src: "/images/gallery/14.jpg",
+      src: withBase("images/gallery/14.jpg"),
       alt: "14",
       caption: "Preparação para o Ironman",
       span: "normal",
@@ -266,17 +268,17 @@ export const specialEvents = {
       // EDITAR: Fotos em public/images/events/graduation/
       photos: [
         {
-          src: "/images/events/graduation/01.jpg",
+          src: withBase("images/events/graduation/01.jpg"),
           alt: "Cerimónia de graduação",
           caption: "O momento em que o conquistaste",
         },
         {
-          src: "/images/events/graduation/02.jpg",
+          src: withBase("images/events/graduation/02.jpg"),
           alt: "Capa e birrete",
           caption: "Anos de trabalho, um dia perfeito",
         },
         {
-          src: "/images/events/graduation/03.jpg",
+          src: withBase("images/events/graduation/03.jpg"),
           alt: "Celebração depois",
           caption: "Depois dos aplausos",
         },
@@ -292,7 +294,7 @@ export const specialEvents = {
         "Aniversários não são sobre contar anos - são sobre lembrar por que começámos. Todos os junhos, lembro-me de que as melhores decisões nem sempre são as mais barulhentas.",
       photos: [
         {
-          src: "/images/events/anniversary/01.jpg",
+          src: withBase("images/events/anniversary/01.jpg"),
           alt: "Jantar de aniversário",
           caption: "Mais um ano, a escolher isto",
         },
@@ -341,7 +343,7 @@ export const closing = {
     "Mas quis que se tornasse num lugar a que pudesses sempre voltar.",
   body: "Alguns momentos passam. Outros ficam connosco - e os que ficam merecem um lar.",
   // EDITAR: Imagem de fecho
-  image: "/images/closing.jpg",
+  image: withBase("images/closing.jpg"),
   imageAlt: "Nós, juntos",
   // EDITAR: Despedida final
   signOff: "Sempre teu,",
