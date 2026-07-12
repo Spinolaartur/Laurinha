@@ -6,7 +6,8 @@
  * Imagens em: src/assets/ (import) ou public/images/ (caminho)
  */
 
-const withBase = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+const withBase = (path) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 
 export const siteMeta = {
   // EDITAR: Título do site ( também atualiza index.html )
@@ -262,41 +263,25 @@ export const specialEvents = {
       subtitle: "Universidade da Madeira",
       // EDITAR: Data da graduação
       date: "Julho de 2026",
-      isoDate: "2026-07-15",
+      isoDate: "2026-07-18",
       tribute:
-        "Passaste anos a aprender a cuidar dos outros - com precisão, paciência e uma força silenciosa que a maioria das pessoas nunca vê. Ver-te a atravessar aquele palco não foi só orgulho. Foi testemunhar alguém a tornar-se exactamente quem estava destinada a ser.\n\nA Madeira deu-te a base. Tu deste-lhe dedicação. E eu tive o privilégio de te ver tornar-te enfermeira - alguém que vai mudar vidas porque nunca deixou de aparecer.",
+        "A minha enfermeira favorita. Foi nisto em que tornaste hoje. E eu não podia estar mais orgulhoso de ti. \n\nFoi um dia muito bonito.",
       // EDITAR: Fotos em public/images/events/graduation/
       photos: [
         {
           src: withBase("images/events/graduation/01.jpg"),
-          alt: "Cerimónia de graduação",
-          caption: "O momento em que o conquistaste",
+          alt: "",
+          caption: "",
         },
         {
           src: withBase("images/events/graduation/02.jpg"),
-          alt: "Capa e birrete",
-          caption: "Anos de trabalho, um dia perfeito",
+          alt: "",
+          caption: "",
         },
         {
           src: withBase("images/events/graduation/03.jpg"),
-          alt: "Celebração depois",
-          caption: "Depois dos aplausos",
-        },
-      ],
-    },
-    {
-      id: "anniversary",
-      title: "O Nosso Aniversário",
-      subtitle: "Todos os anos, escolhido outra vez",
-      date: "1 de junho",
-      isoDate: "2022-06-01",
-      tribute:
-        "Aniversários não são sobre contar anos - são sobre lembrar por que começámos. Todos os junhos, lembro-me de que as melhores decisões nem sempre são as mais barulhentas.",
-      photos: [
-        {
-          src: withBase("images/events/anniversary/01.jpg"),
-          alt: "Jantar de aniversário",
-          caption: "Mais um ano, a escolher isto",
+          alt: "",
+          caption: "",
         },
       ],
     },
@@ -316,21 +301,21 @@ export const letters = {
       title: "Sobre os dias comuns",
       date: "Uma nota tranquila",
       content:
-        "A maior parte do que amo em nós não acontece em ocasiões especiais. Está nas terças-feiras sem sal - na forma como me contas o teu dia, no silêncio que não parece vazio, no facto de casa ter deixado de ser um sítio e ter passado a ser tu.\n\nNão preciso de grandes gestos para saber o que temos. Preciso de mais dias comuns como estes.",
+        'O nosso amor não está apenas nas ocasiões especiais. Está em todas as mensagens de "Bom dia", nos pequenos gestos de carinho, nas terças-feiras normais, no facto de "casa" ter deixado de ser um sítio e ter passado a ser tu.\n\nNão são preciso de grandes gestos para sabermos o que temos. Preciso de mais dias comuns como estes.',
     },
     {
-      id: "letter-2",
-      title: "Sobre a tua graduação",
-      date: "Julho de 2026",
+      id: "letter-3",
+      title: "Sobre namorar contigo",
+      date: "Apreciação não crítica",
       content:
-        "Sei o quanto trabalhaste para isto - as manhãs cedo, as dúvidas que nunca mostraste, as horas a preparar algo que importa. Pensas que estás apenas a receber um diploma. Mas estás a tornar-te alguém que vai segurar a mão das pessoas nos dias mais difíceis.\n\nTenho orgulho em ti de uma forma difícil de pôr em palavras. Por isso fiz isto.",
+        "Em ti encontrei alguém com quem posso partilhar tudo e ser a minha melhor versão de mim, ao mesmo tempo que te faço ser a tua. Namorar contigo não é complicado, é natural.\n\nÉ como se estivéssemos a fazer algo que sempre soubemos que devíamos fazer",
     },
     {
       id: "letter-3",
       title: "Sobre voltar aqui",
       date: "Sempre que precisares",
       content:
-        "Este site não é um presente de uma só vez. É um lugar a que podes voltar - num dia difícil, num dia feliz, ou numa tarde calma em que queiras apenas recordar.\n\nConstruí-o porque algumas coisas merecem mais permanência do que uma mensagem ou um momento. Porque mereces saber, sempre que precisares de o recordar, que és amada - com calma, por completo e sem condições.",
+        "Este site não é um presente de uma só vez. É um lugar a que podes voltar, tanto num dia difícil, num dia feliz, ou numa tarde calma em que queiras apenas recordar.\n\nFi-lo para ti, mas também para nós. Para que possamos sempre voltar, juntos.",
     },
   ],
 };
@@ -338,10 +323,9 @@ export const letters = {
 // ─── FECHO ──────────────────────────────────────────────────
 export const closing = {
   // EDITAR: Mensagem final
-  headline: "Isto começou como um presente para um dia.",
-  subheadline:
-    "Mas quis que se tornasse num lugar a que pudesses sempre voltar.",
-  body: "Alguns momentos passam. Outros ficam connosco - e os que ficam merecem um lar.",
+  headline: "Isto começou como um presente para a tua graduação",
+  subheadline: "",
+  body: "Mas quis que se tornasse num lugar a que pudesses sempre voltar.",
   // EDITAR: Imagem de fecho
   image: withBase("images/closing.jpg"),
   imageAlt: "Nós, juntos",
