@@ -11,7 +11,7 @@ const withBase = (path) =>
 
 export const siteMeta = {
   // EDITAR: Título do site ( também atualiza index.html )
-  title: "A Nossa História",
+  title: "O Nosso Cantinho",
   // EDITAR: Nome dela ( usado com moderação )
   herName: "Laura",
   // EDITAR: Teu nome ( opcional, para o rodapé )
@@ -29,7 +29,7 @@ export const navigation = [
 
 // ─── INTERFACE ( textos dos componentes ) ───────────────────
 export const ui = {
-  siteBrand: "A Nossa História",
+  siteBrand: "O Nosso Cantinho",
   heroEyebrow: "Um arquivo vivo",
   scroll: "Deslizar",
   scrollToTimeline: "Ir para a linha do tempo",
@@ -265,7 +265,7 @@ export const specialEvents = {
       date: "Julho de 2026",
       isoDate: "2026-07-18",
       tribute:
-        "A minha enfermeira favorita. Foi nisto em que tornaste hoje. E eu não podia estar mais orgulhoso de ti. \n\nFoi um dia muito bonito.",
+        "A minha enfermeira 💛 \n\nHoje o mundo da enfermagem recebe uma pessoa cuidadora, carinhosa e com um coração enorme. E eu não podia estar mais orgulhoso de ti. \n\nFoi um dia muito bonito.",
       // EDITAR: Fotos em public/images/events/graduation/
       photos: [
         {
@@ -298,24 +298,24 @@ export const letters = {
   items: [
     {
       id: "letter-1",
-      title: "Sobre os dias comuns",
+      title: "Sobre dias comuns",
       date: "Uma nota tranquila",
       content:
-        'O nosso amor não está apenas nas ocasiões especiais. Está em todas as mensagens de "Bom dia", nos pequenos gestos de carinho, nas terças-feiras normais, no facto de "casa" ter deixado de ser um sítio e ter passado a ser tu.\n\nNão são preciso de grandes gestos para sabermos o que temos. Preciso de mais dias comuns como estes.',
+        'Não é nas ocasiões especiais que te amo. É em todas as mensagens de "Bom dia" que mandamos todos os dias sem exceção, é nas terças-feiras normais em que tu me perguntas como vai o trabalho, é no facto de o meu dia a dia passar a ser sempre contigo ao meu lado. \n\nNão preciso de grandes gestos para saber o que temos. Preciso de mais dias comuns como estes.',
     },
     {
       id: "letter-3",
       title: "Sobre namorar contigo",
       date: "Apreciação não crítica",
       content:
-        "Em ti encontrei alguém com quem posso partilhar tudo e ser a minha melhor versão de mim, ao mesmo tempo que te faço ser a tua. Namorar contigo não é complicado, é natural.\n\nÉ como se estivéssemos a fazer algo que sempre soubemos que devíamos fazer",
+        "Em ti encontrei muito mais do que um amor, encontrei a minha melhor amiga e parceira perfeita para a vida. És a pessoa com quem posso partilhar tudo em absoluta confiança e, ao teu lado, sinto que me transformo na minha melhor versão, ao mesmo tempo que me enche de orgulho apoiar-te para que sejas também a tua.\n\nNamorar contigo não é complicado, é natural. É como se estivéssemos a fazer algo que sempre soubemos que devíamos fazer",
     },
     {
       id: "letter-3",
       title: "Sobre voltar aqui",
       date: "Sempre que precisares",
       content:
-        "Este site não é um presente de uma só vez. É um lugar a que podes voltar, tanto num dia difícil, num dia feliz, ou numa tarde calma em que queiras apenas recordar.\n\nFi-lo para ti, mas também para nós. Para que possamos sempre voltar, juntos.",
+        "Este espaço não é um presente de uma só vez. É um lugar a que podes voltar, tanto num dia difícil, num dia feliz, ou numa tarde calma em que queiras apenas recordar.\n\nFi-lo para ti, mas também para nós. Para que possamos sempre voltar, juntos.",
     },
   ],
 };
