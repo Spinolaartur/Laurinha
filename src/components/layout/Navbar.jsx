@@ -1,17 +1,24 @@
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Moon, Sun } from 'lucide-react';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { navigation, ui } from '../../data/siteContent';
 import { scrollToSection } from '../../hooks/useActiveSection';
 import { cn } from '../../utils/cn';
 
 export default function Navbar({ activeSection, isDark, onToggleDark }) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const openMenuButtonRef = useRef(null);
 
   const handleNavClick = (id) => {
-    scrollToSection(id);
+    if (openMenuButtonRef.current) {
+      openMenuButtonRef.current.blur();
+    }
+
     setMobileOpen(false);
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => scrollToSection(id));
+    });
   };
 
   return (
